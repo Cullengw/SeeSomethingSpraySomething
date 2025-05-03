@@ -165,7 +165,7 @@ export function updateParams(parameterMap:Map<string, UtilityInterfaces.Paramete
         GlobalParams.SPRAY_END_TIME = GlobalParams.SPRAY_START_TIME + GlobalParams.SPRAY_DURATION + 0.02;
         //console.log(`Auto starting at ${GlobalParams.SPRAY_START_TIME}\nAuto-ending at ${GlobalParams.SPRAY_END_TIME}`); //end just after the product passes
     }
-
+if(GlobalParams.LINE_SPEED * GlobalParams.SPRAY_DURATION)
     GlobalParams.VIRTUAL_LINE_LENGTH = 1.2 * GlobalParams.LINE_SPEED * GlobalParams.SPRAY_DURATION;
 
     //duty cycle and frequency

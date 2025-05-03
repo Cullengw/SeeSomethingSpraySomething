@@ -17,15 +17,24 @@ From the main folder,
 - npm install html2canvas
 - npm i react-router
 
+
+Localhost run
 Run server:
 - navigate to SeeSomethingSpraySomething/backend
 - open terminal
-- node server.js
+- flask run
 
 Run front-end:
 - navigate to SeeSomethingSpraySomething folder
 - open terminal
 - npm run dev
+
+Server run:
+- from SeeSomethingSpraySomething directory run 'npm run build'
+- setup a python virtual environment on the server with the pip installs
+- activate the virtual environment
+- navigate to the SeeSomethingSpraySomething/backend directory
+- run 'waitress-serve --call factory:create_app'
 
 
 # React + TypeScript + Vite
